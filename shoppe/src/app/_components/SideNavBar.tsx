@@ -106,7 +106,13 @@ export function SideNavBar() {
                             </div>
                             <div className="pl-2 w-full space-y-1">
                                 <div>
-                                    Invoice
+                                    Tax Invoice
+                                </div>
+                                <div>
+                                    Challan
+                                </div>
+                                <div>
+                                    Expense
                                 </div>
                                 <div>
                                     Flipkart Manifest
@@ -120,23 +126,17 @@ export function SideNavBar() {
                         </div>
                         <div className="place-content-center space-y-1">
                             <div className="font-bold">
-                                Ledgers
+                                Ledger
                             </div>
                             <div className="pl-2 w-full space-y-1">
                                 <div>
                                     Sales
                                 </div>
                                 <div>
-                                    Product
+                                    Cash
                                 </div>
                                 <div>
-                                    Customer
-                                </div>
-                                <div>
-                                    Product Category
-                                </div>
-                                <div>
-                                    Brand
+                                    Bank
                                 </div>
                             </div>
                         </div>

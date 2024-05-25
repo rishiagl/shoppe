@@ -4,7 +4,13 @@ export default function Page() {
   return (
       <div className="flex flex-col justify-center p-10">
         <div>
-          Getting Started
+          Masters/Customer
+        </div>
+        <div>
+            Search Bar
+        </div>
+        <div>
+            List of Accounts
         </div>
       </div>
   );
