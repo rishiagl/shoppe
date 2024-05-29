@@ -1,7 +1,7 @@
 import { Route } from 'wouter'
-import customerIcon from './assets/customer.png'
-import productIcon from './assets/product.png'
-import homeIcon from "./assets/home.png" 
+import customerIcon from '../assets/customer.png'
+import productIcon from '../assets/product.png'
+import homeIcon from "../assets/home.png" 
 import { useState } from 'react'
 import { Link } from "wouter"
 

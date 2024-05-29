@@ -1,9 +1,9 @@
-import { NavWidget } from './NavWidget'
+import { NavWidget } from './components/NavWidget'
 import './App.css'
 import { CustomerPage } from './Pages/CustomerPage'
-import { Product } from './Product';
-import { Link, Route, Switch } from "wouter";
-import { HomePage } from './Pages/HomepAge';
+import { ProductPage } from './Pages/ProductPage';
+import { Route, Switch } from "wouter";
+import { HomePage } from './Pages/HomePage';
 import { DefaultPage } from './Pages/DefaultPage';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <Switch>
           <Route path='/' component={HomePage} />
           <Route path="/customer" component={CustomerPage} />
-          <Route path="/product" component={Product} />
+          <Route path="/product" component={ProductPage} />
           <Route component={DefaultPage}/>
         </Switch>
         <NavWidget></NavWidget>

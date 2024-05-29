@@ -1,4 +1,4 @@
-export function Product() {
+export function ProductPage() {
 
     return (
         <div className="flex flex-col p-10 font-bold justify-center w-full space-y-10">

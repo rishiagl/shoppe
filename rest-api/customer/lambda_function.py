@@ -44,13 +44,14 @@ def lambda_handler(event, context):
         if event['routeKey'] == "GET /customer/{phone_no}":
             cursor = collection.find(
                 {'phone_no': event['pathParameters']['phone_no']})
-            for doc in cursor:
-                body  = doc
+            if(cursor.count() == 0):
+                statusCode = 404
+                body = { "error": "Phone No Not Present" }
+            else:
+                for doc in cursor:
+                    body  = doc
         elif event['routeKey'] == "GET /customer":
-            cursor = collection.find({})
-            body = []
-            for doc in cursor:
-                body.append(doc)
+            body = list(collection.find({}))
     except KeyError:
         statusCode = 400
         body = 'Unsupported route: ' + event['routeKey']
